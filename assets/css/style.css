@@ -128,7 +128,7 @@ section h3 {
   text-transform: capitalize;
 }
 
-section li {
+section .read-list {
   width: 34%;
   padding: 20px;
   margin-left: 3%;
@@ -137,7 +137,7 @@ section li {
   background-color: #fff;
 }
 
-section li:nth-child(2n - 1) { margin-left: 0; }
+section .read-list:nth-child(2n - 1) { margin-left: 0; }
 
 section .box-heading {
   padding: 15px 0;
@@ -169,19 +169,28 @@ section li div:nth-child(2) { display: inline-block; }
 
 section li .box-btn {
   border: none;
+  background-color: #fff;
   color: #FF6C5E;
+  cursor: pointer;
   font-size: 15px;
   text-transform: capitalize;
-  background-color: #fff;
+  transition: all 0.5s;
+  
 }
 
-section li p .active { 
+section  p .active {
+  height: auto; 
   box-shadow: none;
   display: inline;
  }
  
-section li p .more { display: none; }
-.none { display: none; }
+section p .more {
+  height: 0;
+  display: block;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
 
 
 
