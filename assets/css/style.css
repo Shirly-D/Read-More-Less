@@ -108,14 +108,78 @@ li {
   main styling starts here
 =================================*/
 
-section .wrapper div:first-child {
-  background-color: #000;
+section { background-color: #cccccc;}
+
+section .heading {
+  padding: 20px 0;
+  margin-bottom: 50px;
+  background-color: #2B2E37;
   color: #fff;
   font-size: 30px;
   text-align: center;
   text-transform: capitalize;
 }
 
+section h2 {
+  margin-bottom: 50px;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+section li {
+  width: 34%;
+  padding: 20px;
+  margin-left: 3%;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px #7b7b7b;
+  background-color: #fff;
+}
+
+section li:nth-child(2n - 1) { margin-left: 0; }
+
+section .box-heading {
+  padding: 15px 0;
+  border-bottom: 2px solid #efefef;
+  margin-bottom: 30px;
+}
+
+section .box-heading span {
+  color: #FF7969;
+  font-size: 20px;
+}
+
+section li h5 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+section li p::first-letter {text-transform: capitalize; }
+
+section li p {
+  margin-bottom: 30px;
+  color: #9DB3C9;
+  font-size: 15px;
+}
+
+section li div:nth-child(2) { display: inline-block; }
+
+section li div button {
+  border: none;
+  color: #FF6C5E;
+  font-size: 15px;
+  text-transform: capitalize;
+  background-color: #fff;
+}
+
+section li p .active { 
+  box-shadow: none;
+  display: inline;
+ }
+section li p .none { display: none; }
 
 
 
