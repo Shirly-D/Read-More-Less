@@ -120,7 +120,7 @@ section .heading {
   text-transform: capitalize;
 }
 
-section h2 {
+section h3 {
   margin-bottom: 50px;
   display: inline-block;
   font-size: 25px;
@@ -150,7 +150,7 @@ section .box-heading span {
   font-size: 20px;
 }
 
-section li h5 {
+section li h4 {
   margin-bottom: 30px;
   font-size: 22px;
   font-weight: bold;
@@ -180,7 +180,7 @@ section li p .active {
   display: inline;
  }
  
-section li p .none { display: none; }
+section li p .more { display: none; }
 
 
 
