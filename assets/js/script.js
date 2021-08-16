@@ -1,35 +1,27 @@
-var hide = document.querySelectorAll('.hide');
 var text = document.querySelectorAll('.more');
 var btn = document. querySelectorAll('.box-btn');
-var para = document.querySelectorAll('p');
-console.log(para);
+var list = document.querySelectorAll('.read-list');
 
-var words = 0;
-
-function read() {
-    for (var i = 0; i < para.length; i++) {
-        btn[i].addEventListener('click', function(e){
-            if (!words) {
-                text.classList.add("active");
-                hide.classList.add('more');
-                btn.innerHTML = "Read Less";
-                words = 1;
-                console.log(words);
-            } else {
-                hide.classList.add("active");
-                btn.innerHTML = "Read More";
-                text.classList.add('more');
-                words = 0;
-            }
-    
-        })
-            }
-    
+for (var i = 0; i < list.length; i++) {
+    list[i].addEventListener('click', function(e){
+        var current = e.target;
+        var readMore = current.className.includes('box-btn');
+        console.log(current);
+        console.log(readMore);
+        if (!readMore){ 
+            return;
+        }
+        console.log(list[i]);
+        console.log(list.length);
+        var currentText = e.target.parentNode.parentNode.querySelector('.more');
+        console.log(currentText);
+        currentText.classList.toggle('active');
+        current.textContent = current.textContent.includes('read more') ? 'read less' : 'read more';
+        // currentText.classList.remove('more');
+        console.log(current.textContent);
+    })
     
 }
-
-
-
 
 
 
