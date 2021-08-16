@@ -181,6 +181,7 @@ section li p .active {
  }
  
 section li p .more { display: none; }
+.none { display: none; }
 
 
 
