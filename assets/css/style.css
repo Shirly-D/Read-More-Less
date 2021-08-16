@@ -179,6 +179,7 @@ section li p .active {
   box-shadow: none;
   display: inline;
  }
+ 
 section li p .none { display: none; }
 
 
