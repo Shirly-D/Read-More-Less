@@ -128,6 +128,26 @@ section h3 {
   text-transform: capitalize;
 }
 
+section h3::before {
+  content: '';
+  width: 1.5%;
+  height: 3px;
+  position: absolute;
+  top: 155px;
+  left: 5.5%;
+  background-color: #fe4d48;
+}
+
+section h3::after {
+  content: '';
+  width: 3%;
+  height: 3px;
+  position: absolute;
+  top: 165px;
+  left: 5.5%;
+  background-color: #fe4d48;
+}
+
 section .read-list {
   width: 34%;
   padding: 20px;
@@ -188,8 +208,7 @@ section li .box-btn {
 
 .active {
   height: auto; 
-  box-shadow: none;
-  display: inline-block;
+  display: inline;
   opacity: 1;
  }
 
